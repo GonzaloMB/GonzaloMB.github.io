@@ -42,5 +42,7 @@ Whether it's diving into a new framework, finding clever solutions, or just shar
 
 1. Clone this repo and keep up with my blog progress:
    ```bash
-   git clone https://github.com/username/repo-name.git
+   
+   git clone https://github.com/GonzaloMB/GonzaloMB.git
+
    ```

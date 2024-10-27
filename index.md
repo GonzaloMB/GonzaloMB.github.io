@@ -1,8 +1,3 @@
----
-layout: default
-title: "Trial && Error"
----
-
 <ul>
   {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
   {% for post in sorted_posts %}

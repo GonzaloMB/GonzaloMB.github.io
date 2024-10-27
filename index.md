@@ -8,7 +8,7 @@
     <span>{{ post.date | date: "%B %d, %Y" }}
         {% if post.tags %} 
         {% for tag in post.tags %}
-          <span>{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+          <span>({{ tag }})</span>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
     {% endif %}
     </span>

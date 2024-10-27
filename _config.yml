@@ -2,3 +2,6 @@ title: Trial && Error
 description: Intrusive Thoughts & Lost Bits
 show_downloads: false
 theme: jekyll-theme-hacker
+sass:
+  load_paths:
+    - assets/css

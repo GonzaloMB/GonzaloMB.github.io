@@ -1,9 +1,9 @@
 ---
-title: "Hello, World!"
+title: "👾 Hello, World! 👾"
 date: 2024-10-27
+author: GonzaloMB
+tags: ["thoughts", "intro", "junkyard"]
 ---
-
-# 👾 Hello, World! 👾
 
 I've probably lost track of how many times I've written that... Anyway, my name is **Gonzalo**, but my friends call me **Gon**. Let's say you can call me that too—after all, from this moment on, we’re "friends," right? _Hehe._
 
@@ -14,5 +14,3 @@ Think of it more like a collection of my **random thoughts, ideas, and ramblings
 So, **welcome to my digital chaos**! I hope, in some way, it helps me organize my thoughts... or maybe just makes the mess look a bit more interesting.
 
 ---
-
-_**Published on:** October 18, 2024_

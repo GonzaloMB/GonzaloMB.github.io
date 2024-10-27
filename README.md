@@ -1,4 +1,4 @@
-# 🕹️ **RETRO BLOG** 🕹️
+# 🕹️ **BLOG ??? really ??** 🕹️
 
 ### _A personal project by Gon_ ✨
 

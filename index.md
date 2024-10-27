@@ -1,4 +1,7 @@
-<h1>{{ page.title }}</h1>
+---
+layout: default
+title: "Trial && Error"
+---
 
 <div class="post-list">
   {% assign sorted_posts = site.posts | sort: 'date' | reverse %}

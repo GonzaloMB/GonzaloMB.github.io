@@ -1,6 +1,6 @@
 ---
 title: "👾 Hello, World! 👾"
-date: 2024-10-27
+date: 2024-09-18
 author: GonzaloMB
 tags: ["thoughts", "intro", "junkyard"]
 ---

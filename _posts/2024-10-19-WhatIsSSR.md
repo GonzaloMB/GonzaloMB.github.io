@@ -1,15 +1,15 @@
 ---
-title: "SSR, CSR & SSG (SvelteKit)"
+title: "SSR & CSR (SvelteKit)"
 date: 2024-10-28
 author: GonzaloMB
 tags: ["sveltekit", "ssr", "webdevelopment"]
 ---
 
-# Understanding CSR, SSR, and SSG in SvelteKit
+# Understanding CSR and SSR in SvelteKit
 
-When developing web applications with SvelteKit, choosing the right rendering strategy is crucial for performance and user experience. The three main rendering methods are **Client-Side Rendering (CSR)**, **Server-Side Rendering (SSR)**, and **Static Site Generation (SSG)**. Below is an overview of each.
+When developing web applications with SvelteKit, choosing the right rendering strategy is crucial for performance and user experience. The three main rendering methods are **Client-Side Rendering (CSR)** and **Server-Side Rendering (SSR)**. Below is an overview of each.
 
-![SSR](https://github.com/user-attachments/assets/3a5841bd-e9e4-4bef-805b-44fda999c2ed)
+![SSR_Workflow](https://github.com/user-attachments/assets/7debe584-1e5e-4fa8-b218-22c0e020d3d9)
 
 ---
 
@@ -38,6 +38,8 @@ CSR renders content entirely in the browser using JavaScript. The server sends a
 **Definition:**
 SSR generates HTML content on the server for each request. The fully rendered HTML is sent to the client, providing faster initial load times and allowing for better data protection.
 
+![SSR](https://github.com/user-attachments/assets/3a6d492a-f9d6-4509-a7c5-e0e6b6a8aa6e)
+
 **Advantages:**
 
 - Faster initial rendering.
@@ -51,31 +53,12 @@ SSR generates HTML content on the server for each request. The fully rendered HT
 
 ---
 
-## Static Site Generation (SSG)
-
-**Definition:**
-SSG pre-renders pages at build time, generating static HTML files that can be served quickly to clients without additional server processing.
-
-**Advantages:**
-
-- Extremely fast load times.
-- Reduced server resource requirements (can be served from a CDN).
-- Increased security by not exposing server logic at runtime.
-
-**Disadvantages:**
-
-- Not suitable for frequently changing content.
-- Requires rebuilding the site to update content.
-
----
-
 ## Conclusion
 
-The choice between CSR, SSR, and SSG depends on the specific needs of your application:
+The choice between CSR and SSR depends on the specific needs of your application:
 
 - **CSR** is ideal for highly interactive applications where initial load time is not critical and no additional server-side data protection is required.
 - **SSR** offers a balance between interactivity and performance and is suitable for dynamic content that requires greater security in protecting routes and sensitive data.
-- **SSG** provides the best performance for sites with static content and reduces server load but is not suitable for content that changes frequently.
 
 By understanding these rendering strategies and leveraging SvelteKit's flexibility, you can optimize your web application to improve performance, user experience, and the security of your data and routes when necessary.
 

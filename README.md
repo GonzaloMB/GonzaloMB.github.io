@@ -1,14 +1,4 @@
 # 🕹️ **BLOG ??? really ??** 🕹️
-
-### _A personal project by Gon_ ✨
-
----
-
-👾 **Welcome to the Retro Blog Repo!** 👾
-
-This is where the magic happens... 🌐  
-A place where code meets creativity, and the journey of learning becomes a blast from the past. Think neon lights, old-school arcade sounds, and pixel art vibes!
-
 ---
 
 ## 🛠️ **What is this all about?**
@@ -20,7 +10,7 @@ This repo holds the core for my **personal blog**, where I'll be sharing:
 - 📚 **Tutorials**: Some quick and easy guides to help you with coding or hacking stuff.
 - 🤖 **Curiosities**: Weird facts, cool discoveries, and everything in between.
 
-All things tech, all things cool, all things _retro_.
+All things tech, all things cool.
 
 ---
 

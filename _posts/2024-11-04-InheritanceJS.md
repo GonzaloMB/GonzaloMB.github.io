@@ -5,7 +5,6 @@ author: GonzaloMB
 tags: ["javascript", "inheritance", "oop"]
 ---
 
----
 # Understanding Inheritance
 
 ## Definition and Importance of Inheritance in Programming

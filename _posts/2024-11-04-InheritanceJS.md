@@ -1,8 +1,8 @@
 ---
-title: "Understanding Inheritance (JavaScript Fundamentals)"
+title: "Understanding Inheritance (JS Fundamentals)"
 date: 2024-11-03
 author: GonzaloMB
-tags: ["javascript", "inheritance", "oop"]
+tags: ["js", "inheritance", "oop"]
 ---
 
 ## Definition and Importance of Inheritance in Programming

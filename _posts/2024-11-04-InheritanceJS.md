@@ -138,23 +138,24 @@ Understanding the difference is crucial for effective object manipulation. Prope
 ### Examples:
 
 ```javascript
-const car = {
-  brand: "Toyota", // Property
-  model: "Corolla", // Property
-  startEngine() {
+const Person = {
+  name: "Gon", // Property
+  age: 28,      // Property
+  talk() {
     // Method
-    console.log("Engine started");
+    console.log("Hello! My name is " + this.name + "and I'm " + this.age);
   },
-  drive() {
+  run() {
     // Method
-    console.log("Car is driving");
+    console.log("I'm running!");
   },
 };
 
-console.log(car.brand); // Output: Toyota
-console.log(car.model); // Output: Corolla
-car.startEngine(); // Output: Engine started
-car.drive(); // Output: Car is driving
+console.log(Person.name); // Output: Gon
+console.log(Person.age);  // Output: 28
+Person.talk();            // Output: Hello! My name is Gon and I'm 28
+Person.run();             // Output: I'm running!
+
 ```
 
 In an object representing a car:

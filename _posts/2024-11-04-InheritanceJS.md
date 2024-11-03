@@ -1,10 +1,11 @@
 ---
 title: "Inheritance (JavaScript Fundamentals)"
-date: 2024-10-04
+date: 2024-11-04
 author: GonzaloMB
 tags: ["javascript", "inheritance", "oop"]
 ---
 
+---
 # Understanding Inheritance
 
 ## Definition and Importance of Inheritance in Programming
@@ -140,3 +141,5 @@ When creating inheritance chains, it's important that each level in the hierarch
 - **Single Responsibility Principle:** Ensure each class has one responsibility, making the system easier to understand and maintain.
 - **Avoid Overriding Too Much:** Excessive method overriding can make the code hard to follow.
 - **Document the Hierarchy:** Clear documentation helps other developers understand the inheritance structure.
+
+  ---

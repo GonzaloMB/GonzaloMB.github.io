@@ -59,6 +59,37 @@ console.log(me.talk()); // Output: New and improved Talking
 console.log(you.talk()); // Output: New and improved Talking
 ```
 
+# Extending Classes
+
+## Using the `extends` Keyword to Create Subclasses
+
+The `extends` keyword allows creating subclasses that inherit from a parent class. This enables the subclass to inherit methods and properties from its parent class and build upon them.
+
+This inheritance mechanism is fundamental for creating specialized classes from general ones. It promotes code reuse and logical structuring of related classes, making the codebase more maintainable and scalable.
+
+```javascript
+// Extending a Class using 'extends'
+class Person {
+  talk() {
+    return "Talking";
+  }
+}
+
+class SuperHuman extends Person {
+  fly() {
+    return "Flying";
+  }
+}
+
+const me = new Person();
+console.log(me.talk()); // Output: Talking
+console.log(me.fly); // Output: undefined
+
+const you = new SuperHuman();
+console.log(you.fly()); // Output: Flying
+console.log(you.talk()); // Output: Talking
+```
+
 # Objects and Prototypal Inheritance
 
 ## Explanation of JavaScript's Prototype-Based Inheritance Model
@@ -320,105 +351,5 @@ In an `Employee` class hierarchy:
 
 - The `Manager` subclass inherits the `name` property and `work` method from `Employee`.
 - It adds a new property `department` and overrides the `work` method.
-
-# Extending Classes
-
-## Using the `extends` Keyword to Create Subclasses
-
-The `extends` keyword allows creating subclasses that inherit from a parent class. This enables the subclass to inherit methods and properties from its parent class and build upon them.
-
-This inheritance mechanism is fundamental for creating specialized classes from general ones. It promotes code reuse and logical structuring of related classes, making the codebase more maintainable and scalable.
-
-```javascript
-// Extending a Class using 'extends'
-class Person {
-  talk() {
-    return "Talking";
-  }
-}
-
-class SuperHuman extends Person {
-  fly() {
-    return "Flying";
-  }
-}
-
-const me = new Person();
-console.log(me.talk()); // Output: Talking
-console.log(me.fly); // Output: undefined
-
-const you = new SuperHuman();
-console.log(you.fly()); // Output: Flying
-console.log(you.talk()); // Output: Talking
-```
-
-## Overriding Methods and Calling Parent Class Methods with `super`
-
-Subclasses can override inherited methods. The `super` keyword allows calling the parent class's method, which is useful for extending base behavior.
-
-For example:
-
-```javascript
-class Employee {
-  constructor(name) {
-    this.name = name;
-  }
-
-  work() {
-    console.log(`${this.name} is working.`);
-  }
-}
-
-class Developer extends Employee {
-  work() {
-    super.work(); // Calls Employee's work method
-    console.log(`${this.name} is writing code.`);
-  }
-}
-
-const dev = new Developer("Alice");
-dev.work();
-// Output:
-// Alice is working.
-// Alice is writing code.
-```
-
-- In a `Developer` class that extends `Employee`, the `work` method calls `super.work()` to invoke the parent class's method before adding additional behavior.
-
-## Practical Examples of Class Extension
-
-Class extension is useful in many scenarios, such as building specialized classes that share common features but add unique functionalities. This approach allows for modular organization and the expansion of functionalities in complex applications.
-
-### Example:
-
-```javascript
-class Vehicle {
-  constructor(brand) {
-    this.brand = brand;
-  }
-
-  start() {
-    console.log(`${this.brand} vehicle started.`);
-  }
-}
-
-class Car extends Vehicle {
-  start() {
-    super.start();
-    console.log(`${this.brand} car is ready to drive.`);
-  }
-}
-
-const myCar = new Car("Tesla");
-myCar.start();
-// Output:
-// Tesla vehicle started.
-// Tesla car is ready to drive.
-```
-
-In a `Vehicle` class hierarchy:
-
-- The base `Vehicle` class has a `start` method.
-- The `Car` subclass extends `Vehicle` and overrides `start`, using `super.start()` to include the base functionality.
 
 ---

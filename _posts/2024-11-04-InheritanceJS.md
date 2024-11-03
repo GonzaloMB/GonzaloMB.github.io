@@ -1,6 +1,6 @@
 ---
 title: "Understanding Inheritance (JavaScript Fundamentals)"
-date: 2024-11-04
+date: 2024-11-03
 author: GonzaloMB
 tags: ["javascript", "inheritance", "oop"]
 ---
@@ -38,11 +38,10 @@ A constructor is a special method that initializes new instances of a class. It 
 When creating a new instance of a class using the `new` keyword, the constructor method is automatically called. Constructors can accept parameters to customize the new object.
 
 ```javascript
-
 // Inheritance using Classes
 class Person {
   talk() {
-    return 'Talking';
+    return "Talking";
   }
 }
 
@@ -53,12 +52,11 @@ console.log(you.talk()); // Output: Talking
 
 // To update the function for both instances you only have to do it once:
 Person.prototype.talk = function () {
-  return 'New and improved Talking';
+  return "New and improved Talking";
 };
 
 console.log(me.talk()); // Output: New and improved Talking
 console.log(you.talk()); // Output: New and improved Talking
-
 ```
 
 # Objects and Prototypal Inheritance
@@ -70,19 +68,16 @@ JavaScript uses a prototype-based inheritance model, where objects inherit prope
 This prototype chain means that if a property or method isn't found on an object, JavaScript looks up the chain to the object's prototype, and so on, until it finds the property or reaches the end of the chain (`null`). This allows for dynamic inheritance and is fundamental to how JavaScript objects work.
 
 ```javascript
-
 // Inheritance using a Constructor Function
 function Person() {}
 Person.prototype.talk = function () {
-  return 'Talking';
+  return "Talking";
 };
 
 const me = new Person();
 const you = new Person();
 console.log(me.talk()); // Output: Talking
 console.log(you.talk()); // Output: Talking
-
-
 ```
 
 ## How Objects Inherit Properties and Methods
@@ -92,36 +87,30 @@ An object can access properties and methods from its prototype, making inheritan
 You can create an object that inherits from another using `Object.create()`. This method creates a new object with the specified prototype.
 
 ```javascript
-
 // Inheritance using pure objects with Object.create()
 const person = {
   talk() {
-    return 'Talking';
+    return "Talking";
   },
 };
 
 const me = Object.create(person);
 console.log(me.talk()); // Output: Talking
-
-
 ```
 
 Another way to establish prototypal inheritance is by using `Object.setPrototypeOf()`, which sets the prototype of an existing object.
 
 ```javascript
-
 // Inheritance using pure objects with Object.setPrototypeOf()
 const person = {
   talk() {
-    return 'Talking';
+    return "Talking";
   },
 };
 
 const me = {};
 Object.setPrototypeOf(me, person);
 console.log(me.talk()); // Output: Talking
-
-
 ```
 
 **Explanation:**
@@ -149,24 +138,23 @@ Understanding the difference is crucial for effective object manipulation. Prope
 ### Examples:
 
 ```javascript
-
 const car = {
-  brand: 'Toyota',      // Property
-  model: 'Corolla',     // Property
-  startEngine() {       // Method
-    console.log('Engine started');
+  brand: "Toyota", // Property
+  model: "Corolla", // Property
+  startEngine() {
+    // Method
+    console.log("Engine started");
   },
-  drive() {             // Method
-    console.log('Car is driving');
+  drive() {
+    // Method
+    console.log("Car is driving");
   },
 };
 
 console.log(car.brand); // Output: Toyota
 console.log(car.model); // Output: Corolla
-car.startEngine();      // Output: Engine started
-car.drive();            // Output: Car is driving
-
-
+car.startEngine(); // Output: Engine started
+car.drive(); // Output: Car is driving
 ```
 
 In an object representing a car:
@@ -177,22 +165,21 @@ In an object representing a car:
 ### Using Properties and Methods Together
 
 ```javascript
-
 const rectangle = {
-  width: 10,      // Property
-  height: 5,      // Property
-  area() {        // Method
+  width: 10, // Property
+  height: 5, // Property
+  area() {
+    // Method
     return this.width * this.height;
   },
-  perimeter() {   // Method
+  perimeter() {
+    // Method
     return 2 * (this.width + this.height);
   },
 };
 
-console.log(rectangle.area());      // Output: 50
+console.log(rectangle.area()); // Output: 50
 console.log(rectangle.perimeter()); // Output: 30
-
-
 ```
 
 In an object representing a rectangle:
@@ -205,28 +192,27 @@ In an object representing a rectangle:
 Properties can be modified directly, while methods can change the object's state by modifying its properties.
 
 ```javascript
-
 const bankAccount = {
-  balance: 1000,               // Property
-  deposit(amount) {            // Method
+  balance: 1000, // Property
+  deposit(amount) {
+    // Method
     this.balance += amount;
     console.log(`Deposited $${amount}. New balance: $${this.balance}`);
   },
-  withdraw(amount) {           // Method
+  withdraw(amount) {
+    // Method
     if (amount <= this.balance) {
       this.balance -= amount;
       console.log(`Withdrew $${amount}. New balance: $${this.balance}`);
     } else {
-      console.log('Insufficient funds');
+      console.log("Insufficient funds");
     }
   },
 };
 
-bankAccount.deposit(500);      // Output: Deposited $500. New balance: $1500
-bankAccount.withdraw(200);     // Output: Withdrew $200. New balance: $1300
+bankAccount.deposit(500); // Output: Deposited $500. New balance: $1500
+bankAccount.withdraw(200); // Output: Withdrew $200. New balance: $1300
 console.log(bankAccount.balance); // Output: 1300
-
-
 ```
 
 In an object representing a bank account:
@@ -239,24 +225,23 @@ In an object representing a bank account:
 Accessor properties allow you to define methods that are accessed like properties. For example:
 
 ```javascript
-
 const person = {
-  firstName: 'John',   // Property
-  lastName: 'Doe',     // Property
-  get fullName() {     // Getter Method
+  firstName: "John", // Property
+  lastName: "Doe", // Property
+  get fullName() {
+    // Getter Method
     return `${this.firstName} ${this.lastName}`;
   },
-  set fullName(name) { // Setter Method
-    [this.firstName, this.lastName] = name.split(' ');
+  set fullName(name) {
+    // Setter Method
+    [this.firstName, this.lastName] = name.split(" ");
   },
 };
 
 console.log(person.fullName); // Output: John Doe
-person.fullName = 'Jane Smith';
+person.fullName = "Jane Smith";
 console.log(person.firstName); // Output: Jane
-console.log(person.lastName);  // Output: Smith
-
-
+console.log(person.lastName); // Output: Smith
 ```
 
 - A `fullName` getter method that returns a combination of `firstName` and `lastName`.
@@ -271,30 +256,29 @@ Overriding allows a subclass to provide a specific implementation of a method th
 ### Example of Overriding Methods
 
 ```javascript
-
 class Animal {
   constructor(name) {
     this.name = name; // Property
   }
 
-  makeSound() {       // Method
+  makeSound() {
+    // Method
     console.log(`${this.name} makes a sound.`);
   }
 }
 
 class Dog extends Animal {
-  makeSound() {       // Overridden Method
+  makeSound() {
+    // Overridden Method
     console.log(`${this.name} barks.`);
   }
 }
 
-const animal = new Animal('Generic Animal');
+const animal = new Animal("Generic Animal");
 animal.makeSound(); // Output: Generic Animal makes a sound.
 
-const dog = new Dog('Rex');
-dog.makeSound();    // Output: Rex barks.
-
-
+const dog = new Dog("Rex");
+dog.makeSound(); // Output: Rex barks.
 ```
 
 In an `Animal` class hierarchy:
@@ -305,13 +289,13 @@ In an `Animal` class hierarchy:
 ### Inheriting Properties and Adding New Ones
 
 ```javascript
-
 class Employee {
   constructor(name) {
-    this.name = name;   // Property
+    this.name = name; // Property
   }
 
-  work() {              // Method
+  work() {
+    // Method
     console.log(`${this.name} is working.`);
   }
 }
@@ -327,10 +311,8 @@ class Manager extends Employee {
   }
 }
 
-const manager = new Manager('Alice', 'Sales');
+const manager = new Manager("Alice", "Sales");
 manager.work(); // Output: Alice is managing the Sales department.
-
-
 ```
 
 In an `Employee` class hierarchy:
@@ -347,29 +329,26 @@ The `extends` keyword allows creating subclasses that inherit from a parent clas
 This inheritance mechanism is fundamental for creating specialized classes from general ones. It promotes code reuse and logical structuring of related classes, making the codebase more maintainable and scalable.
 
 ```javascript
-
 // Extending a Class using 'extends'
 class Person {
   talk() {
-    return 'Talking';
+    return "Talking";
   }
 }
 
 class SuperHuman extends Person {
   fly() {
-    return 'Flying';
+    return "Flying";
   }
 }
 
 const me = new Person();
 console.log(me.talk()); // Output: Talking
-console.log(me.fly);    // Output: undefined
+console.log(me.fly); // Output: undefined
 
 const you = new SuperHuman();
-console.log(you.fly());  // Output: Flying
+console.log(you.fly()); // Output: Flying
 console.log(you.talk()); // Output: Talking
-
-
 ```
 
 ## Overriding Methods and Calling Parent Class Methods with `super`
@@ -379,7 +358,6 @@ Subclasses can override inherited methods. The `super` keyword allows calling th
 For example:
 
 ```javascript
-
 class Employee {
   constructor(name) {
     this.name = name;
@@ -397,13 +375,11 @@ class Developer extends Employee {
   }
 }
 
-const dev = new Developer('Alice');
+const dev = new Developer("Alice");
 dev.work();
 // Output:
 // Alice is working.
 // Alice is writing code.
-
-
 ```
 
 - In a `Developer` class that extends `Employee`, the `work` method calls `super.work()` to invoke the parent class's method before adding additional behavior.
@@ -415,7 +391,6 @@ Class extension is useful in many scenarios, such as building specialized classe
 ### Example:
 
 ```javascript
-
 class Vehicle {
   constructor(brand) {
     this.brand = brand;
@@ -433,13 +408,11 @@ class Car extends Vehicle {
   }
 }
 
-const myCar = new Car('Tesla');
+const myCar = new Car("Tesla");
 myCar.start();
 // Output:
 // Tesla vehicle started.
 // Tesla car is ready to drive.
-
-
 ```
 
 In a `Vehicle` class hierarchy:

@@ -1,4 +1,9 @@
-# Gonzalo Meana Balseiro
+---
+title: "👾 Gonzalo Meana Balseiro CV 👾"
+date: 2025-06-23
+author: GonzaloMB
+tags: ["CV", "intro"]
+---
 
 **SAP BTP Specialist & Full-Stack Engineer**  
 Madrid, Spain | +34 692 273 044 | gonzalomeanabalseiro@gmail.com

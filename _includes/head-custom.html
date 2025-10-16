@@ -1,0 +1,28 @@
+{%- comment -%} Custom favicon & app icons for pages-themes/hacker Place your
+icon files in /assets and update paths if needed. {%- endcomment -%} {%- assign
+ico = site.favicon_ico | default: '/assets/favicon.ico' -%} {%- assign png16 =
+site.favicon_16 | default: '/assets/favicon-16x16.png' -%} {%- assign png32 =
+site.favicon_32 | default: '/assets/favicon-32x32.png' -%} {%- assign apple =
+site.apple_touch_icon | default: '/assets/apple-touch-icon.png' -%} {%- assign
+svg = site.favicon_svg | default: '/assets/favicon.svg' -%}
+
+<link rel="icon" href="{{ ico | relative_url }}" type="image/x-icon" />
+<link rel="shortcut icon" href="{{ ico | relative_url }}" type="image/x-icon" />
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ png16 | relative_url }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="{{ png32 | relative_url }}"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ apple | relative_url }}"
+/>
+<link rel="icon" type="image/svg+xml" href="{{ svg | relative_url }}" />

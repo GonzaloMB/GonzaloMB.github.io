@@ -1,6 +1,6 @@
 ---
 title: "NATS | When, Why and How"
-date: 2025-10-16
+date: 2025-10-15
 author: GonzaloMB
 tags: ["nats", "microservices"]
 ---

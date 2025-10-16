@@ -1,6 +1,6 @@
 ---
 title: "Print SmartChart(UI5 Analytical List Page)"
-date: 2025-10-28
+date: 2025-10-16
 author: GonzaloMB
 tags: ["ui5", "fiori-elements", "smartchart", "pdf"]
 ---

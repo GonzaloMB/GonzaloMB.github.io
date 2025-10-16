@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="/assets/css/custom.css">
 <ul>
   {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
   {% for post in sorted_posts %}

@@ -1,8 +1,8 @@
 ---
-title: "Clean Code UI5 | Principles, Patterns and Examples"
+title: "Clean Code UI5"
 date: 2025-10-16
 author: GonzaloMB
-tags: ["ui5", "clean-code", "fiori", "sap"]
+tags: ["ui5", "fiori", "sap"]
 ---
 
 Practical guidelines to write maintainable, testable, and scalable SAP UI5 apps. This post covers structure, naming, async patterns, bindings, fragments, formatters, error handling, performance tips, and examples in JS/TS.

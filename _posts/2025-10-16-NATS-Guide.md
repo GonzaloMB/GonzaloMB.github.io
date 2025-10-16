@@ -1,8 +1,8 @@
 ---
-title: "NATS for Node.js • When, Why, and How (with TS/JS Examples)"
+title: "NATS | When, Why, and How"
 date: 2025-10-16
 author: GonzaloMB
-tags: ["nats", "messaging", "microservices", "nodejs", "typescript"]
+tags: ["nats", "microservices"]
 ---
 
 NATS is a high‑performance messaging system for building fast, simple, and resilient services. This guide explains when and why to use NATS, how it compares to HTTP, and shows concise TypeScript/JavaScript examples for Pub/Sub, Request‑Reply, Work Queues, and JetStream persistence.

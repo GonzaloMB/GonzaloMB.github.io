@@ -1,5 +1,5 @@
 ---
-title: "SAP CAP (Node.js) · Totals in Fiori Elements v4 (AnalyticalTable)"
+title: "SAP CAP - Totals in Fiori Elements v4"
 date: 2025-10-16
 author: GonzaloMB
 tags: ["sap", "cap", "fiori-elements", "ui5", "odata"]

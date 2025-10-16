@@ -1,8 +1,8 @@
 ---
-title: "Print SmartChart | UI5 Analytical List Page"
+title: "Print SmartChart | Analytical List Page"
 date: 2025-10-11
 author: GonzaloMB
-tags: ["ui5", "fiori-elements", "extension"]
+tags: ["ui5", "fiori-elements", "extension", "sap"]
 ---
 
 Create and extend an Analytical List Page (Fiori Elements) to add a "Print Chart to PDF" feature using UI5 and lightweight client-side libraries.

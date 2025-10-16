@@ -1,3 +1,4 @@
+---
 title: "SAP CAP (Node.js) · Totals in Fiori Elements v4 (AnalyticalTable)"
 date: 2025-10-16
 author: GonzaloMB
@@ -23,7 +24,7 @@ Reference repo (full code): https://github.com/GonzaloMB/Totals_CAP_v4
 
 Define the entity and mark the numeric field you want to totalize (here, `stock`).
 
-```cds
+```abap
 namespace my.bookshop;
 
 entity Books {
@@ -40,7 +41,7 @@ entity Books {
 
 Project the entity in your service to expose it via OData.
 
-```cds
+```abap
 using my.bookshop as my from '../db/data-model';
 
 service CatalogService {
@@ -105,7 +106,7 @@ Pin the UI5 version (example 1.112.1):
 
 Define grouping, default totals, and the measure with its aggregation. This enables the total in the table footer and totals by group.
 
-```cds
+```abap
 using CatalogService as service from '../../srv/cat-service';
 
 annotate service.Books with @(
@@ -217,5 +218,3 @@ GET /BooksAggregate?$apply=concat(groupby((ID,category,title))/aggregate($count%
 - CAP Docs (Get Started): https://cap.cloud.sap/docs/get-started/
 
 ---
-
-⌨️ with ❤️ by [GonzaloMB](https://gonzalomb.com) · Contact me on LinkedIn: https://www.linkedin.com/in/gonzalo-meana-balseiro-90a523188/

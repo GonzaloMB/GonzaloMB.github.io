@@ -1,0 +1,68 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom overrides (Tokyo Night vibe) */
+
+/* Background and text colors */
+body {
+  background-color: #1a1b26; /* Tokyo Night background */
+  color: #c0caf5; /* Tokyo Night text */
+}
+
+/* Links */
+a {
+  color: #7aa2f7; /* Primary Accent */
+}
+
+a:hover {
+  color: #bb9af7; /* Secondary Accent */
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #c0caf5;
+}
+
+/* Code blocks and inline code */
+code,
+pre {
+  background-color: #2f334d; /* Slightly lighter background for code */
+  color: #7aa2f7; /* Accent color for code */
+}
+
+/* Borders and dividers */
+hr,
+.post-item {
+  border-color: #565f89; /* Dimmed blue-gray for borders */
+}
+
+/* Tags and meta information */
+.post-meta,
+.tags {
+  color: #565f89; /* Dimmed text color for metadata */
+}
+
+/* Header/footer accents */
+.header,
+.footer,
+.post-title {
+  color: #bb9af7; /* Secondary Accent */
+}
+
+.header a,
+.footer a {
+  color: #7aa2f7; /* Primary Accent */
+}
+
+/* Highlight or important text */
+.important {
+  color: #f7768e; /* Highlight color */
+}
+

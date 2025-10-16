@@ -1,6 +1,6 @@
 ---
 title: "Print SmartChart(UI5 Analytical List Page)"
-date: 2025-10-16
+date: 2025-10-11
 author: GonzaloMB
 tags: ["ui5", "fiori-elements", "smartchart", "pdf"]
 ---
@@ -302,13 +302,6 @@ sap.ui.define(
   }
 );
 ```
-
----
-
-## Test the feature
-
-Video (SmartChart to PDF):
-https://user-images.githubusercontent.com/55688528/223064464-d04f32ce-a1fd-4e31-95ae-5b790603bb3f.mp4
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "SAP CAP· CSV Uploader Fiori Elements v4"
+title: "SAP CAP | CSV Uploader Fiori Elements v4"
 date: 2025-10-14
 author: GonzaloMB
 tags: ["sap", "cap", "fiori-elements", "ui5"]

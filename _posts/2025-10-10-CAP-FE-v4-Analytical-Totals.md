@@ -1,5 +1,5 @@
 ---
-title: "SAP CAP - Totals Fiori Elements v4"
+title: "SAP CAP | Totals Fiori Elements v4"
 date: 2025-10-10
 author: GonzaloMB
 tags: ["sap", "cap", "fiori-elements", "ui5", "odata"]

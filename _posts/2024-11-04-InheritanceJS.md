@@ -1,5 +1,5 @@
 ---
-title: "Understanding Inheritance (JS Fundamentals)"
+title: "Understanding Inheritance | JS Fundamentals"
 date: 2024-11-03
 author: GonzaloMB
 tags: ["js", "inheritance", "oop"]
@@ -171,7 +171,7 @@ Understanding the difference is crucial for effective object manipulation. Prope
 ```javascript
 const Person = {
   name: "Gon", // Property
-  age: 28,      // Property
+  age: 28, // Property
   talk() {
     // Method
     console.log("Hello! My name is " + this.name + "and I'm " + this.age);
@@ -183,10 +183,9 @@ const Person = {
 };
 
 console.log(Person.name); // Output: Gon
-console.log(Person.age);  // Output: 28
-Person.talk();            // Output: Hello! My name is Gon and I'm 28
-Person.run();             // Output: I'm running!
-
+console.log(Person.age); // Output: 28
+Person.talk(); // Output: Hello! My name is Gon and I'm 28
+Person.run(); // Output: I'm running!
 ```
 
 In an object representing a car:

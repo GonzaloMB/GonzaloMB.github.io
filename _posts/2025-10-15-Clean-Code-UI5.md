@@ -1,6 +1,6 @@
 ---
 title: "Clean Code UI5"
-date: 2025-10-16
+date: 2025-10-15
 author: GonzaloMB
 tags: ["ui5", "fiori", "sap"]
 ---

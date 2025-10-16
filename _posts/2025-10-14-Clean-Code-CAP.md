@@ -1,6 +1,6 @@
 ---
 title: "Clean Code SAP CAP"
-date: 2025-10-16
+date: 2025-10-14
 author: GonzaloMB
 tags: ["sap", "cap", "cds", "nodejs", "odata"]
 ---
